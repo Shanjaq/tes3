@@ -5,7 +5,7 @@ edition = "2021"
 
 [lib]
 name="tes3"
-crate-type = ["cdylib", "lib"]
+crate-type = ["dylib"]
 
 [dependencies]
 bstr = { version = "^0.2", default-features = false, features = ["std"] }
