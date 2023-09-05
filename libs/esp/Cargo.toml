@@ -3,7 +3,7 @@ name = "esp"
 version = "0.0.0"
 edition = "2021"
 
-[target.x86_64-pc-windows-msvc]
+[lib]
 name="tes3"
 crate-type = ["cdylib"]
 
