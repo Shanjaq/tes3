@@ -15,7 +15,7 @@ members = ["libs/*"]
 
 [target.x86_64-pc-windows-msvc]
 name="tes3"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [dependencies]
 esp = { path = "libs/esp", optional = true }
