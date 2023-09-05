@@ -15,7 +15,7 @@ members = ["libs/*"]
 
 [lib]
 name="tes3"
-crate-type = ["cdylib"]
+crate-type = ["dylib"]
 
 [dependencies]
 esp = { path = "libs/esp", optional = true }
