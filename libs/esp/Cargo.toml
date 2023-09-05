@@ -4,8 +4,8 @@ version = "0.0.0"
 edition = "2021"
 
 [lib]
-name="tes3"
-crate-type = ["dylib"]
+name="esplibdll"
+crate-type = ["cdylib"]
 
 [dependencies]
 bstr = { version = "^0.2", default-features = false, features = ["std"] }
