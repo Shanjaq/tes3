@@ -23,4 +23,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Binary
-        path: ${{ github.workspace }}/tes3/target/debug/deps/*
+        path: ${{ github.workspace }}/target/debug/deps/*
