@@ -3,6 +3,10 @@ name = "esp"
 version = "0.0.0"
 edition = "2021"
 
+[lib]
+name="esp"
+crate-type = ["dylib"]
+
 [dependencies]
 bstr = { version = "^0.2", default-features = false, features = ["std"] }
 bytemuck = { version = "^1.9", features = ["derive", "extern_crate_alloc"] }
