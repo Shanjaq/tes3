@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Rustup
+    - name: Rustup1
+      run: rustup install nightly
+    - name: Rustup2
       run: rustup target add x86_64-pc-windows-msvc
     - name: Build
       run: cargo build --lib --verbose --target x86_64-pc-windows-msvc
