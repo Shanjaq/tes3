@@ -17,10 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      id: compile
-      run: cargo build --verbose
+      run: cargo build --lib --verbose
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: Binary
-        path: ${{ github.workspace }}/target/debug/deps/*esp*
+        path: ${{ github.workspace }}/target/debug/tes3.dll
