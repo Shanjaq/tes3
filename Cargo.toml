@@ -13,7 +13,7 @@ categories = ["Game development"]
 [workspace]
 members = ["libs/*"]
 
-[target.x86_64-pc-windows-msvc]
+[lib]
 name="tes3"
 crate-type = ["cdylib"]
 
