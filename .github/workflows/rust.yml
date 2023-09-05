@@ -22,4 +22,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Binary
-        path: ${{ github.workspace }}/target/debug/tes3.dll
+        path: ${{ github.workspace }}/target/debug/*tes3*.dll
