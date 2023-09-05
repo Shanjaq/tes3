@@ -20,6 +20,7 @@ crate-type = ["dylib"]
 [dependencies]
 esp = { path = "libs/esp", optional = true }
 nif = { path = "libs/nif", optional = true }
+compiler_builtins = { version = "0.1.35" }
 
 [dev-dependencies]
 rayon = "^1.5"

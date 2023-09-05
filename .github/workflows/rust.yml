@@ -1,0 +1,29 @@
+name: Rust2
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Rustup1
+      run: rustup install nightly
+    - name: Rustup2
+      run: rustup target add x86_64-pc-windows-msvc
+    - name: Build
+      run: cargo build --lib --verbose --target x86_64-pc-windows-msvc
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Binary
+        path: ${{ github.workspace }}/target/debug/*tes3*
