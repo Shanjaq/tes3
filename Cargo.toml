@@ -14,7 +14,7 @@ categories = ["Game development"]
 members = ["libs/*"]
 
 [lib]
-name="tes3libdll"
+name="tes3"
 crate-type = ["cdylib"]
 
 [dependencies]
