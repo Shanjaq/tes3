@@ -8,7 +8,7 @@ This library is still very much in-progress! At the moment it does little more t
 
 The APIs are considered unstable, struct/field names may be changed if I think of something better. If you're depending on this library for your own project it may be a good idea to pin to a specific commit.
 
-The plan is to eventually stablize a useful API and publish to `crates.io`. Not quite there yet though!
+The plan is to eventually stAblize a useful API and publish to `crates.io`. Not quite there yet though!
 
 ### Example
 
